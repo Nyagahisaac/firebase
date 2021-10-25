@@ -1,0 +1,18 @@
+<h1>Django REST API with Angular to fetch for Users</h1>
+<div>
+  <div *ngfor="let comment of comments">
+      <ul >
+         <li>{{comment.id}}</li>
+        <li>{{comment.name}}</li> 
+        <li></li>
+        
+      </ul>
+    <img [src]='imageURL' />
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <a href="https://jsonplaceholder.typicode.com/comments">Upload comments</a>
+
+    <!-- <input type="file" name="profile" (change)="onChange($event)" /> -->
+   
+  </form>
